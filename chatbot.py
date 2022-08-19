@@ -2,8 +2,6 @@
 # https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44
 # thanks to Jere Xu ;)
 
-
-
 import numpy as np
 import json
 import pickle
@@ -14,7 +12,6 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
-
 
 import random
 
@@ -32,7 +29,7 @@ class ChatBot:
         nltk.download('wordnet')
         nltk.download('omw-1.4')
 
-        data_file = open('intents.json').read()
+        data_file = open('ChatBot\intents.json').read()
         self.intents = json.loads(data_file)
         for intent in self.intents['intents']:
             for pattern in intent['patterns']:
@@ -112,7 +109,7 @@ class ChatBot:
     def loadModel(self):
         from keras.models import load_model
         self.model = load_model('chatbot_model.h5')
-        self.intents = json.loads(open('intents.json').read())
+        self.intents = json.loads(open('ChatBot\intents.json')).read()
         self.words = pickle.load(open('words.pkl', 'rb'))
         self.classes = pickle.load(open('classes.pkl', 'rb'))
 

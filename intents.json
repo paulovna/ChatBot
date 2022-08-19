@@ -1,15 +1,29 @@
 {"intents":[
   { "tag": "saudacao",
     "patterns":["Ola","Opa","Oi", "tudo bem"],
-    "responses": ["Oi","Olá"]
+    "responses": ["Oi","Ola"]
   },
   { "tag": "despedida",
     "patterns":["valeu","tchau","Obrigado","tks"],
-    "responses": ["Até breve","Falou"]
+    "responses": ["Ate breve","Falou"]
   },
-  { "tag": "data_prova",
-    "patterns":["Quando sera a prova?","A prova será em que dia?"],
-    "responses": ["no dia 26"]
+
+  { "tag": "estudar",
+    "patterns":["estudar no exterior", "mudar para o exterior", "estudar em outro país", "mudar para outro país","outro país"],
+    "responses": ["A FEI mantém convênios de colaboração com instituições estrangeiras permitindo que a comunidade acadêmica tenha substanciais experiências no exterior. O atual mercado exige que profissionais possuam competências globais e sejam capazes de trabalhar de maneira respeitosa e eficiente com pessoas de diferentes culturas e idiomas. Visando oferecer novas oportunidades para a qualificação profissional e formação acadêmica da comunidade, o Centro Universitário FEI estabelece parcerias com instituições de ensino no exterior e promove diferentes projetos de colaboração internacional, incluindo os programas de intercâmbio cultural e/ou científico e os de dupla diplomação. Para entender mais clique no link: https://portal.fei.edu.br/relacoes-internacionais"]
+  },
+  { "tag": "países",
+    "patterns":["Quais países?","Quais países a FEI mantém convênio", "Quais os países conveniados","paises"],
+    "responses": ["Alemanha, Argentina, Brasil, Canadá, Chile, Colômbia, El Salvador, Equador, Espanha, França, Guatemala, Hungria, México, Nicarágua, Paraguai, Peru, Portugal, República Dominicana, Suécia, Taiwan, Uruguai, Venezuela"]
+  },
+  { "tag": "regulamentoSantander",
+    "patterns":["regulamento Santander","Qual o regulamento da bolsa Santander?", "Qual a regulamentação da Bolsa Santander?","Como é a regulamentação da Bolsa Santander?","Como funciona a bolsa Santander?"],
+    "responses": ["O regulamento para a seleção de alunos de graduação para Bolsas Santander pode ser acessada pelo link https://gerenciador.fei.edu.br/Content/Arquivos/Template/junho2017/Themes/Resources/imagens/ri/regulamento2020.pdf?_gl=1*7mnqay*_ga*MTAzODIyMTgxLjE2NTk5MDg1NTA.*_ga_9CWNLCJN1W*MTY2MDY1MjU3Mi4yLjEuMTY2MDY1MzY2MS41Nw.."]
+  },
+  { "tag": "bolsas",
+    "patterns":["Quais bolsas são oferecidas?", "Quais são as bolsas de estudos?", "Quais bolsas de estudos?"],
+    "responses": ["As bolsas de estudos oferecidas pela FEI são: Programa TOP Espanha, BRAFITEC, Fórmula Santander, Bolsas Ibero-Americanas Santander e Programa Santander Mundi."]
   }
+
 ]
 }

@@ -1,7 +1,7 @@
 from chatbot import ChatBot
 myChatBot = ChatBot()
 #apenas carregar um modelo pronto
-myChatBot.loadModel()
+#myChatBot.loadModel()
 
 #criar o modelo
 myChatBot.createModel()
@@ -9,7 +9,7 @@ myChatBot.createModel()
 
 
 
-print("Bem vindo ao Chatbot")
+print("Bem vindo ao Chatbot de Parcerias Internacionais da FEI")
 
 
 pergunta = input("como posso te ajudar?")
