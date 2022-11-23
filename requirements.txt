@@ -1,1 +1,2 @@
-opencv
+discord.py>=2.0.0
+pytest
