@@ -10,7 +10,7 @@ myChatBot.createModel()
 
 
 print("Bem vindo ao Chatbot de Parcerias Internacionais da FEI")
-
+print("Made by Paulo Aguiar)
 
 pergunta = input("como posso te ajudar?")
 resposta, intencao = myChatBot.chatbot_response(pergunta)
